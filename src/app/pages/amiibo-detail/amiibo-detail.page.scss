@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+ion-icon {
+    cursor: pointer;
+}
+
+ion-col {
+    display: flex;
+    justify-content: center;
+}
+
+.amiibo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    justify-content: center;
+    width: 30vh;
+
+    app-card {
+        min-height: 60vh;
+    }
+}
+
+.amiibo-img {
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+span, ul { 
+    margin: 0.2rem
+}
+
+li {
+    display: flex;
+    margin: 0.4rem 0rem 0.4rem 0rem;
+}

@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  @if(amiibo) {
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <div class="amiibo-random">
+              <app-card
+                [name]="amiibo.name"
+                [gameSeries]="amiibo.gameSeries"
+                [image]="amiibo.image"
+              ></app-card>
+              <ion-button (click)="setRandomAmiibo()">Random</ion-button>
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  }
+</ion-content>
+
+<app-tabs></app-tabs>

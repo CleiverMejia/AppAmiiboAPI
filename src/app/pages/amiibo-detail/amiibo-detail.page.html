@@ -1,0 +1,38 @@
+<app-header>
+  <ion-icon name="chevron-back" [routerLink]="['/home']" back></ion-icon>
+</app-header>
+
+<ion-content [fullscreen]="true">
+  @if(amiibo) {
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          <div class="amiibo">
+            <img [src]="amiibo.image" class="amiibo-img">
+            <h1><strong>{{ amiibo.name }}</strong></h1>
+            <span><strong>Amiibo series: </strong> {{ amiibo.amiiboSeries}}</span>
+            <span><strong>Game series: </strong>{{ amiibo.gameSeries}}</span>
+            <span><strong>Head: </strong>{{ amiibo.head}}</span>
+            <span><strong>Release:</strong></span>
+            <ul>
+              <li>
+                <img src="assets/icon/australia.png">: {{ amiibo.release.au }}
+              </li>
+              <li>
+                <img src="assets/icon/european-union.png">: {{ amiibo.release.eu }}
+              </li>
+              <li>
+                <img src="assets/icon/japan.png">: {{ amiibo.release.jp }}
+              </li>
+              <li>
+                <img src="assets/icon/united-states.png">: {{ amiibo.release.na }}
+              </li>
+            </ul>
+            <span><strong>Tail: </strong>{{ amiibo.tail }}</span>
+            <span><strong>Type: </strong>{{ amiibo.type }}</span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  }
+</ion-content>

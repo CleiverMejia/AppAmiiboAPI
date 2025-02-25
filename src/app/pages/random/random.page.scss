@@ -1,0 +1,16 @@
+.amiibo-random {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vh;
+    gap: 2rem;
+    
+    app-card {
+        min-height: 60vh;
+    }
+}
+
+ion-col {
+    display: flex;
+    justify-content: center;
+}
